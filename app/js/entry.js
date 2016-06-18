@@ -19,10 +19,12 @@ gitHubLU.controller('UserController', ['$http', function($http) {
           location: res.data.location,
           repos: res.data.public_repos
         };
+        stats.userName = null;
         stats.error = null;
       },
       function(err) {
         console.log(err);
+        stats.data = null;
         stats.error = 'not a valid GitHub user name';
       }
     );
