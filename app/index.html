@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Looker Upper</title>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+<body data-ng-app="gitHubLU">
+  <main data-ng-controller="UserController as userCtrl">
+  <form data-ng-submit="userCtrl.lookUp()">
+    <label for="userName">User Name</label>
+    <input type="text" name="userName" data-ng-model="userCtrl.userName">
+    <button type="submit"> Submit </button>
+  </form>
+  </main>
+  <script src="./bundle.js"></script>
+</body>
+</html>

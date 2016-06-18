@@ -1,0 +1,27 @@
+{
+  "name": "ngangularapi",
+  "version": "1.0.0",
+  "description": "client side angular app using public api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THXBurke/NgClientAPI.git"
+  },
+  "author": "RB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/THXBurke/NgClientAPI/issues"
+  },
+  "homepage": "https://github.com/THXBurke/NgClientAPI#readme",
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
