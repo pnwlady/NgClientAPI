@@ -7,7 +7,7 @@ gitHubLU.controller('UserController', ['$http', function($http) {
   var stats = this;
   this.lookUp = function() {
     console.log('testing');
-    $http.get('https://api.github.com/users/' + this.userName /* '/?access_token=' +process.env.GITHUB_TOKEN*/)
+    $http.get('https://api.github.com/users/' + this.userName)
     .then(
       function(res) {
         stats.data = {

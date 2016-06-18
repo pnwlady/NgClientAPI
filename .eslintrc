@@ -2,6 +2,7 @@
   "env": {
     "mocha": true,
     "node": true,
+    "jasmine": true,
     "es6": true
   },
   "globals": {

@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const webpack = require('webpack-stream');
+const KarmaServer = require('karma').Server;
+
 
 gulp.task('webpack:dev', () => {
   return gulp.src('app/js/entry.js')
@@ -13,7 +15,7 @@ gulp.task('webpack:dev', () => {
 });
 
 gulp.task('static:dev', () => {
-  gulp.src(['app/**/*.html', 'app/**/*.css'])
+  gulp.src(['app/**/*.html'])
     .pipe(gulp.dest('./build'));
 });
 
@@ -26,6 +28,12 @@ gulp.task('webpack:test', () => {
     }
   }))
   .pipe(gulp.dest('test'));
+});
+
+gulp.task('karma', ['webpack:test'], (done) => {
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js'
+  }, done).start();
 });
 
 gulp.task('default', ['webpack:dev', 'static:dev']);
