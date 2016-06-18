@@ -4,3 +4,5 @@
 * THXBurke
 * MiaRomero
 * pnwlady
+
+to run test do a gulp and then gulp karma 
