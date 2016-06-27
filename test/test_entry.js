@@ -1,4 +1,3 @@
-
 /* eslint-disable prefer-arrow-callback*/
 var angular = require('angular');
 require('angular-mocks');

@@ -1,8 +1,26 @@
-<h1>GitHub User Search</h1>
-<h3>First npm install all the dependencies included in the package.json file (npm i <package> --save-dev). Then in your terminal type in gulp to run the build. Then enter node index.js to start the server on port 3000. Next, open a browser and type in http://localhost:3000 In the text box enter a github user name and the stats will populate in the browser. Try it! It's fun!</h3>
+###GitHub User Search
+
+## To Run
+  * npm install all the dependencies from package.json file:
+```
+npm install
+```
+ * run build with:
+```
+gulp
+```
+ * start application:
+```
+npm start
+```
+ * Open http://localhost:3000 in browser and search for a github user.
+
 ## Our GitHub Names:
 * THXBurke
 * MiaRomero
 * pnwlady
 
-to run test do a gulp and then gulp karma 
+## To Test
+```
+gulp karma
+```

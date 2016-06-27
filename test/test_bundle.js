@@ -44,7 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
 	/* eslint-disable prefer-arrow-callback*/
 	var angular = __webpack_require__(1);
 	__webpack_require__(3);
